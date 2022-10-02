@@ -17,7 +17,7 @@ export async function store( domain: Domain ) {
 export async function update( id: ObjectId, domain: Domain ) {
   return Domains.findOneAndUpdate( { _id: id }, {
     $set: domain,
-  } );
+  },{returnDocument:'after'} );
 }
 
 export async function destroy( id: ObjectId ) {

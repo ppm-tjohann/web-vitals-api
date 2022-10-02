@@ -16,8 +16,12 @@ router.post( '/',
   validateRequest( { body: Domain } ),
   DomainController.store );
 
-router.put( '/:id', DomainController.update );
+router.put( '/:id',
+  validateRequest({body:Domain,params:ParamsWithId})
+  , DomainController.update );
 
-router.delete( '/:id', DomainController.destroy );
+router.delete( '/:id',
+  validateRequest({params:ParamsWithId}),
+  DomainController.destroy );
 
 export default router;

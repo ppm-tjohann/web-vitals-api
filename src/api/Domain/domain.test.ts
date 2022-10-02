@@ -106,7 +106,7 @@ beforeAll( async () => {
     } );
 
     describe( 'PUT /api/v1/domains/:id', () => {
-        it( 'responds with 422, missing id', async () =>
+        it( 'responds with 404, missing id', async () =>
           request( app ).
             put( '/api/v1/domains/' ).
             send( {
@@ -116,7 +116,7 @@ beforeAll( async () => {
             } ).
             set( 'Accept', 'application/json' ).
             expect( 'Content-Type', /json/ ).
-            expect( 200 ).
+            expect( 404 ).
             then( ( response ) => {
                 expect( response.body ).toHaveProperty( 'message' );
             } ),
@@ -149,11 +149,11 @@ beforeAll( async () => {
             expect( 200 ).then( ( response ) => {
               expect( response.body ).toHaveProperty( '_id' );
               expect( response.body ).toHaveProperty( 'name' );
-              expect( response.body.name ).toBe( 'https://www.walkdlinik.de' );
+              expect( response.body.name ).toBe( 'https://www.new-walkdlinik.de' );
               expect( response.body ).toHaveProperty( 'sitemap' );
-              expect( response.body.sitemap ).toBe( 'https://www.sitemap.de' );
+              expect( response.body.sitemap ).toBe( 'https://www.new-sitemap.de' );
               expect( response.body ).toHaveProperty( 'favicon' );
-              expect( response.body.favicon ).toBe( 'https://www.favi.de' );
+              expect( response.body.favicon ).toBe( 'https://www.new-favi.de' );
           } ),
         );
 
