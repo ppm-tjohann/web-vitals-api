@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="47b45a17-bceb-45b7-a563-ebad5d3a1e20" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/emojis.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middlewares.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middlewares.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/api.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/app.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Domain/domain.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Domain/domain.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Domain/domain.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Domain/domain.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Domain/domains.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Domain/domains.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
     <property name="optimize.imports.on.save" value="true" />
     <property name="rearrange.code.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="actions.on.save" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -112,7 +107,8 @@
       <updated>1664699591586</updated>
       <workItem from="1664699594729" duration="21000" />
       <workItem from="1664699627814" duration="9231000" />
-      <workItem from="1664710147984" duration="12382000" />
+      <workItem from="1664710147984" duration="13654000" />
+      <workItem from="1664727442464" duration="841000" />
     </task>
     <servers />
   </component>

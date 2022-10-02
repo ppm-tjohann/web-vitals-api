@@ -13,3 +13,14 @@ export async function fetchOne( id: ObjectId ) {
 export async function store( domain: Domain ) {
   return Domains.insertOne( domain );
 }
+
+export async function update( id: ObjectId, domain: Domain ) {
+  return Domains.findOneAndUpdate( { _id: id }, {
+    $set: domain,
+  } );
+}
+
+export async function destroy( id: ObjectId ) {
+  return Domains.findOneAndDelete( { _id: id } );
+}
+
